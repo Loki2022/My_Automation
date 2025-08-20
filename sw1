@@ -1,0 +1,13 @@
+vtp domain CCIE
+vtp passowrd cisco
+
+int range g0/0-1
+switch trunk encap dot1
+switch mode trunk
+no shut
+!
+vlan 10
+int vlan 10
+no shut
+ip add 10.1.12.1 255.255.255.0
+ip ospf 1 area 0
