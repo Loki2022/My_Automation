@@ -1,0 +1,8 @@
+int g1
+ip ospf network point-to-point
+ip ospf 1 area 0
+
+int lo0
+ip add 1.1.1.1 255.255.255.0
+ip ospf network point-to-point
+ip ospf 1 area 0
